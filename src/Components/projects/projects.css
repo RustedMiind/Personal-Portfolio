@@ -1,0 +1,72 @@
+.projects {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 0;
+}
+
+.projects .cards-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.projects .cards-container .card {
+  position: relative;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: row;
+  width: 50em;
+  height: 30em;
+  overflow-x: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.projects .cards-container .card .components {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 5em;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+  z-index: 3;
+}
+
+.projects .cards-container .card .components * {
+  z-index: 5;
+}
+.projects .cards-container .card::after {
+  z-index: 2;
+  content: "";
+  color: white;
+  position: absolute;
+  background: rgb(15, 52, 96);
+  background: linear-gradient(
+    90deg,
+    rgba(15, 52, 96, 1) 0%,
+    rgba(51, 91, 140, 1) 100%
+  );
+  width: 50em;
+  height: 30em;
+  flex-direction: column;
+  justify-content: center;
+  transform: translate(-50em);
+  transition: transform 300ms ease 200ms, opacity 300ms ease 300ms;
+  opacity: 0.2;
+}
+.projects .cards-container .card:hover::after {
+  transform: translate(0em);
+  opacity: 0.9;
+}
+.projects .cards-container .card .components .text-items {
+  transition: transform 300ms ease 500ms;
+}
+.projects .cards-container .card:hover .components .text-items {
+  transform: scale(1.05);
+}

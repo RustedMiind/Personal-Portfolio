@@ -1,0 +1,53 @@
+/* @import url("https://learn.microsoft.com/en-us/typography/font-list/bradley-hand-itc#overview"); */
+
+.home * {
+  color: white;
+  background-color: transparent;
+}
+
+.home {
+  max-width: 100vw;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh);
+  padding: 0 16em;
+  background-color: var(--darkest);
+}
+.home .content {
+  overflow: hidden;
+  background-image: url("logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 6em 10em 6em 0em;
+}
+.home .content h1 {
+  font-size: 6em;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+}
+.home .content h4 {
+  font-size: 2.6em;
+  font-family: "Bradley Hand ITC";
+  font-weight: 500;
+}
+.home .content button {
+  outline: none;
+  border: none;
+  background: var(--light);
+  background: linear-gradient(90deg, var(--light3) 0%, var(--light) 100%);
+  padding: 0.4em 1em;
+  font-size: 1.4em;
+  border-radius: 0.2em;
+  cursor: pointer;
+  transition: 300ms ease-in-out;
+  margin-top: 0.2em;
+}
+.home .toy {
+  width: 3em;
+  position: absolute;
+  transition: 100ms;
+  opacity: 0.7;
+}
