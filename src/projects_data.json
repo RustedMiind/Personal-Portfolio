@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Crowdfund",
+    "id": 1,
+    "done": 80,
+    "imageURL": "https://cdn.discordapp.com/attachments/689278978716205163/880463102817230858/Crowdfund.JPG",
+    "link": "https://semiotic-karma-304519.web.app",
+    "describtion": "Was a front-end challenge  www.frontendmentor.io"
+  },
+  {
+    "name": "Calculator",
+    "id": 2,
+    "done": 100,
+    "imageURL": "https://cdn.discordapp.com/attachments/689278978716205163/880828330729930822/unknown.png",
+    "link": "https://calculator-rustedmind.web.app/",
+    "describtion": "Simple Calculator built with vanilla JS"
+  },
+  {
+    "name": "Fake Chat Messenger",
+    "id": 3,
+    "done": 90,
+    "imageURL": "https://cdn.discordapp.com/attachments/689278978716205163/889493182088376400/unknown.png",
+    "link": "https://fake-chat-rustedmind.web.app/",
+    "describtion": "Fake Chat to interract with and reply to yourself \"kinda funny\""
+  },
+  {
+    "name": "Rusteefy",
+    "id": 4,
+    "done": 20,
+    "imageURL": "https://cdn.discordapp.com/attachments/689278978716205163/907759092238520420/unknown.png",
+    "link": "https://rusteefy.web.app/",
+    "describtion": "Music cloud app like spotify with no music in it"
+  }
+]

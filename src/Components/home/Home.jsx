@@ -26,8 +26,8 @@ function Home() {
       onMouseMove={(event) => {
         setXPosition(event.clientX);
         setYPosition(event.clientY);
-        setXToMove(xPosition - xDefault);
-        setYToMove(yPosition - yDefault);
+        setXToMove((xPosition - xDefault) * 0.6);
+        setYToMove((yPosition - yDefault) * 0.6);
         console.log(xToMove, yToMove);
       }}
       ref={homeRef}
@@ -35,7 +35,7 @@ function Home() {
       <div className="content">
         <h1>RustedMind</h1>
         <h4>Creative Front-End Developer</h4>
-        <button>About Me</button>
+        <button className="button-main">About Me</button>
       </div>
       <img
         src={toy1}

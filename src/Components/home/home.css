@@ -33,18 +33,6 @@
   font-family: "Bradley Hand ITC";
   font-weight: 500;
 }
-.home .content button {
-  outline: none;
-  border: none;
-  background: var(--light);
-  background: linear-gradient(90deg, var(--light3) 0%, var(--light) 100%);
-  padding: 0.4em 1em;
-  font-size: 1.4em;
-  border-radius: 0.2em;
-  cursor: pointer;
-  transition: 300ms ease-in-out;
-  margin-top: 0.2em;
-}
 .home .toy {
   width: 3em;
   position: absolute;

@@ -14,16 +14,26 @@
 }
 
 .projects .cards-container .card {
+  box-shadow: 0 20px 80px 0 rgb(0 0 0 / 45%);
+  transition: box-shadow 500ms ease 300ms;
+  margin: 4em 0;
   position: relative;
   border-radius: 2px;
   display: flex;
   flex-direction: row;
-  width: 50em;
+  width: 60em;
   height: 30em;
   overflow-x: hidden;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.projects .cards-container .number {
+  position: absolute;
+  font-size: 10em;
+  font-weight: 900;
+  z-index: 6;
+  transform: translate(-0.2em, -0.2em);
 }
 .projects .cards-container .card .components {
   color: white;
@@ -52,13 +62,16 @@
     rgba(15, 52, 96, 1) 0%,
     rgba(51, 91, 140, 1) 100%
   );
-  width: 50em;
+  width: 60em;
   height: 30em;
   flex-direction: column;
   justify-content: center;
-  transform: translate(-50em);
+  transform: translate(-60em);
   transition: transform 300ms ease 200ms, opacity 300ms ease 300ms;
   opacity: 0.2;
+}
+.projects .cards-container .card:hover {
+  box-shadow: 0 20px 80px 0 rgb(0 0 0 / 70%);
 }
 .projects .cards-container .card:hover::after {
   transform: translate(0em);
@@ -69,4 +82,21 @@
 }
 .projects .cards-container .card:hover .components .text-items {
   transform: scale(1.05);
+}
+.projects .cards-container .card .components .text-items h2 {
+  font-size: 3.6em;
+  letter-spacing: 0em;
+  margin: 0.2em 0;
+}
+.projects .cards-container .card .components .text-items p {
+  font-size: 1.3em;
+  margin: 0.6em 0 0.2em 0;
+  font-family: "LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif";
+  font-style: italic;
+}
+.left {
+  transform: translateX(-2em);
+}
+.right {
+  transform: translateX(2em);
 }
