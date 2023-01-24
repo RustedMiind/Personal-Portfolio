@@ -1,0 +1,38 @@
+.about {
+  width: 60vw;
+  z-index: 2;
+}
+.about ul li {
+  list-style: none;
+}
+.about .section-title > h3 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+.about .text-container * {
+  color: var(--main);
+}
+
+.about .text-container h3 {
+  font-size: 2em;
+  padding: 0.2em 0;
+  color: var(--dark);
+  opacity: 0.8;
+  margin-top: 0.4em;
+}
+.about .text-container p {
+  font-size: 1.6em;
+  line-height: 1.1em;
+}
+.about .text-container li {
+}
+.about .text-container p .hashed {
+  opacity: 0.6;
+  display: block;
+  /* padding-left: 1em; */
+}
+@media screen and (max-width: 1024px) {
+  .about {
+    width: 80vw;
+  }
+}

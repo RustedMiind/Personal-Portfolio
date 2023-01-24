@@ -8,7 +8,7 @@ import toy4 from "./toy4.png";
 import toy5 from "./toy5.png";
 import { useEffect } from "react";
 import { useRef } from "react";
-import NavBar from "../navbar/NavBar";
+import Header from "./Header";
 function Home() {
   const homeRef = useRef(null);
   let WIDTH = window.innerWidth,
@@ -33,9 +33,13 @@ function Home() {
       ref={homeRef}
     >
       <div className="content">
-        <h1>RustedMind</h1>
-        <h4>Creative Front-End Developer</h4>
-        <button className="button-main">About Me</button>
+        <Header />
+        <h4>Creative Front-End Developer.</h4>
+        <h3>Click on the top logo for a magic trick</h3>
+
+        <button className="button-main">
+          <span>Get Started</span>
+        </button>
       </div>
       <img
         src={toy1}

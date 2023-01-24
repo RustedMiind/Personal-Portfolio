@@ -9,6 +9,14 @@
   --light2: #c62e47;
   --light3: #a01a32;
 }
+@font-face {
+  font-family: Bradley Hand ITC;
+  src: url("./BRADHITC.TTF");
+}
+@font-face {
+  font-family: "Custom Font";
+  src: url("./LibreBaskerville-Italic.ttf");
+}
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* 
 font-family: 'Fira Sans', sans-serif;
@@ -23,6 +31,10 @@ font-family: 'Prompt', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2em;
 }
 body,
 html {
@@ -40,15 +52,88 @@ html {
   border: none;
   background: var(--light);
   background: linear-gradient(90deg, var(--light3) 0%, var(--light) 100%);
-  padding: 0.7em 1.4em;
+  /* padding: 0.7em 1.4em; */
+  height: 2.4em;
+  width: 7em;
   font-size: 1.2em;
   letter-spacing: 0.05em;
   border-radius: 0.05em;
   cursor: pointer;
-  transition: 300ms ease-in-out;
+  transition: border-radius 300ms ease-in 100ms;
   margin-top: 0.4em;
-  width: fit-content;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.button-main span {
+  z-index: 11 !important;
+  display: flex;
+  position: relative;
+}
+.button-main:hover {
+  border-radius: 0.6em;
+}
+.button-main:hover::after {
+  width: 7em;
+  border-radius: 0;
+}
+.button-main::after {
+  border-radius: 100%;
+  content: "";
+  width: 0;
+  transition: 200ms ease-in;
+  height: 2.4em;
+  position: absolute;
+  z-index: 10;
+  background: var(--dark2);
+  background: linear-gradient(90deg, var(--dark2) 0%, var(--main2) 100%);
+}
+/* Nav items hover */
+.nav-links a {
+  padding: 0.4em;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--light);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title h5 {
+  font-family: "LibreBaskerville-Regular,Palatino Linotype,Times New Roman,serif";
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+  color: var(--light2);
+  opacity: 0.8;
+}
+.section-title h3 {
+  font-size: 3em;
+  color: var(--dark);
+  opacity: 0.8;
+  margin-top: 20px;
 }
 /* Home Page */
 .App {
@@ -56,4 +141,31 @@ html {
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Responsive Sizing */
+@media (max-width: 319px) {
+  body {
+    font-size: 9px;
+  }
+}
+/* Small Mobiles */
+@media (max-width: 374px) and (min-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+}
+/* Medium Large Mobiles */
+@media (max-width: 584px) and (min-width: 375px) {
+  body {
+    font-size: 12px;
+  }
+}
+/* large Mobile & Tablets */
+@media (max-width: 849px) and (min-width: 585px) {
+  body {
+    font-size: 13px;
+  }
 }

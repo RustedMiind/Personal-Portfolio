@@ -21,6 +21,16 @@ nav .left-side {
   align-items: center;
   justify-content: center;
 }
+nav .right-side ul li {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  padding: 0.8em 0.6em;
+}
+nav .left-side {
+  pointer-events: all;
+}
 nav .left-side img {
   height: 75%;
 }
@@ -30,8 +40,12 @@ nav .right-side ul {
 }
 nav .right-side ul li {
   list-style: none;
-  padding: 0.8em 1.4em;
   /* background-color: red; */
   font-size: 1.2em;
   pointer-events: all;
+}
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 0 2em;
+  }
 }

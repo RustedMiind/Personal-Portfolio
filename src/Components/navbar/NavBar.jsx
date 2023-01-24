@@ -4,13 +4,19 @@ function NavBar() {
   return (
     <nav>
       <div className="left-side">
-        <img src={Logo} alt="RustedMind Logo" />
+        <img id="start-effect" src={Logo} alt="RustedMind Logo" />
       </div>
-      <div className="right-side">
+      <div className="right-side nav-links">
         <ul>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          {/* <li>
+            <a href="">Contact</a>
+          </li> */}
         </ul>
       </div>
     </nav>
