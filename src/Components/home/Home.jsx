@@ -37,9 +37,9 @@ function Home() {
         <h4>Creative Front-End Developer.</h4>
         <h3>Click on the top logo for a magic trick</h3>
 
-        <button className="button-main">
+        <a href="#projects" className="button-main">
           <span>Get Started</span>
-        </button>
+        </a>
       </div>
       <img
         src={toy1}
