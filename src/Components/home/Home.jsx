@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Github, Linkedin, Facebook, Instagram } from "react-bootstrap-icons";
 import "./home.css";
 import Logo from "./logo.png";
 import toy1 from "./toy1.png";
@@ -32,15 +33,56 @@ function Home() {
       }}
       ref={homeRef}
     >
+      <div className="links">
+        <ul>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ali-soliman-2517b920a/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Linkedin className="icon" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/RustedMiind"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Github className="icon" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/Ra7ieM/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Facebook className="icon" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/alisolimannn/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <Instagram className="icon" />
+            </a>
+          </li>
+        </ul>
+      </div>
       <div className="content">
         <Header />
         <h4>Creative Front-End Developer.</h4>
-        <h3>Click on the top logo for a magic trick</h3>
+        <h3>Click on top R logo for a magic trick</h3>
 
         <a href="#projects" className="button-main">
           <span>Get Started</span>
         </a>
       </div>
+
       <img
         src={toy1}
         alt="Toy Floating"
