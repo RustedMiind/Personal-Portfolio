@@ -1,19 +1,19 @@
 [
   {
-    "name": "Crowdfund",
+    "name": "Spotify Clone",
     "id": 1,
+    "done": 20,
+    "imageURL": "./img/spotify_clone_project.png",
+    "link": "https://rusteefy.web.app/",
+    "describtion": "Music cloud app containing no music."
+  },
+  {
+    "name": "Crowdfund",
+    "id": 2,
     "done": 80,
     "imageURL": "https://cdn.discordapp.com/attachments/689278978716205163/880463102817230858/Crowdfund.JPG",
     "link": "https://semiotic-karma-304519.web.app",
     "describtion": "Was a front-end challenge.  \"www.frontendmentor.io\""
-  },
-  {
-    "name": "Rusteefy",
-    "id": 2,
-    "done": 20,
-    "imageURL": "https://cdn.discordapp.com/attachments/689278978716205163/907759092238520420/unknown.png",
-    "link": "https://rusteefy.web.app/",
-    "describtion": "Music cloud app containing no music."
   },
   {
     "name": "Fake Chat Messenger",
