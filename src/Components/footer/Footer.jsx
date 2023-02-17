@@ -23,10 +23,7 @@ function Footer() {
             </a>
           </li>
           <li>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/in/ali-soliman-2517b920a/"
-            >
+            <a target="_blank" href="https://www.linkedin.com/in/rustedmind/">
               LinkedIn
             </a>
           </li>

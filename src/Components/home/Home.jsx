@@ -37,7 +37,7 @@ function Home() {
         <ul>
           <li>
             <a
-              href="https://www.linkedin.com/in/ali-soliman-2517b920a/"
+              href="https://www.linkedin.com/in/rustedmind/"
               target="_blank"
               rel="noreferrer"
             >

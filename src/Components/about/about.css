@@ -25,12 +25,18 @@
   line-height: 1.1em;
 }
 .about .text-container li {
+  margin-top: 0.4rem;
 }
 .about .text-container p .hashed {
   opacity: 0.6;
   display: block;
   /* padding-left: 1em; */
 }
+.about .text-container p .hashed a {
+  display: block;
+  margin-top: 0.5rem;
+}
+
 @media screen and (max-width: 1024px) {
   .about {
     width: 80vw;

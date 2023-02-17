@@ -1,5 +1,5 @@
 import "./about.css";
-import CV from "./ali_soliman_cv.pdf";
+import CV from "./Ali Soliman Resume.pdf";
 function About() {
   return (
     <div className="about" id="about">
@@ -37,10 +37,11 @@ function About() {
           <h3>Core Skills</h3>
           <p>
             <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>ReactJS</li>
+              <li>
+                React.js, React + TypeScript, React Redux, React-Router-DOM
+              </li>
+              <li>CSS, HTML, JavaScript, TypeScript</li>
+              <li>AngularJS, Bootstrap, jQuery, SASS, Python</li>
             </ul>
           </p>
         </div>
@@ -61,6 +62,7 @@ function About() {
             Mobile
             <span className="hashed">
               <a href="tel:+201556449557">+20 155 6449 557</a>
+              <a href="tel:+201095574449">+20 109 557 4449</a>
             </span>
           </p>
         </div>
